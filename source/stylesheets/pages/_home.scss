@@ -1,7 +1,7 @@
 #home {
   background-image: linear-gradient(to right, rgba(124,165,184,0.2), rgba(228, 87, 46,0.25)), url('../../images/birds.jpg');
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   background-position: bottom;
   .container {
     position: absolute;
@@ -109,7 +109,7 @@
 
 @media (max-width: 470px) {
   #home {
-    background-position:left;
+    background-position-x:-60px;
     .container {
       height: 100%;
       display: flex;
