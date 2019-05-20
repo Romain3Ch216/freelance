@@ -1,0 +1,133 @@
+#home {
+  background-image: linear-gradient(to right, rgba(124,165,184,0.2), rgba(228, 87, 46,0.25)), url('../../images/birds.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  background-position: bottom;
+  .container {
+    position: absolute;
+    bottom: 0px;
+    height: 50%;
+    width: 100%;
+    #wrap {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 7%;
+      left: 5%;
+      color: $dark_blue;
+      font-family: 'Muli', sans-serif;
+      h1, h2 {
+        text-transform: uppercase;
+        margin: 0px;
+      }
+      h1 {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 3px;
+      }
+      h2 {
+        font-size: 30px;
+        font-weight: 200;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0px;
+        margin-bottom: 5px;
+      }
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.tel, .email, .social {
+  p {
+    margin: 5px;
+  }
+}
+
+.tel {
+  display: block;
+}
+
+.email {
+  display: block;
+  a {
+    color: $light_blue;
+    text-decoration: underline;
+  }
+}
+
+.social {
+  display: block;
+  a {
+    border: 3px solid transparent;
+    border-radius: 30px;
+    text-decoration: none;
+    color: $dark_blue;
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 7px 3px 3px;
+    transition: border ease 300ms;
+    transition: color ease 300ms;
+    &:hover {
+      color: white;
+    }
+    svg {
+      margin-right: 5px;
+      overflow: hidden;
+    }
+  }
+}
+
+.social .icon {
+  background: transparent;
+  transition: background ease 300ms;
+}
+
+.social a:hover svg .outline {
+  fill: white;
+}
+
+.social .outline {
+  transition: fill ease 200ms;
+}
+
+.social .linkedin-icon:hover {
+  background: #0077B5;
+}
+
+.social .github-icon:hover {
+  background: #161614;
+}
+
+
+@media (max-width: 470px) {
+  #home {
+    background-position:left;
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  }
+  #wrap {
+    text-align: center;
+    position: static !important;
+  }
+  h1 {
+    font-size: 14px !important;
+  }
+  h2 {
+    font-size: 16px !important;
+  }
+  p {
+    font-size: 12px !important;
+  }
+}
