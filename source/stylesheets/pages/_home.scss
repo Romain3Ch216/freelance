@@ -111,8 +111,6 @@
 
 @media (max-width: 470px) {
   #home {
-    background-position-x: -50px;
-    background-position-y: 0px;
     background: url('../../images/birds.jpg');
     .container {
       height: 100%;
@@ -121,6 +119,7 @@
       flex-direction: column;
     }
   }
+
   #wrap {
     text-align: center;
     position: static !important;
