@@ -3,12 +3,13 @@
   background-size: cover;
   height: 100vh;
   background-position: bottom;
-  overflow-y: hidden;
   .container {
     position: absolute;
     bottom: 0px;
     height: 50%;
     width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     #wrap {
       display: flex;
       justify-content: space-around;
@@ -110,7 +111,9 @@
 
 @media (max-width: 470px) {
   #home {
-    background: linear-gradient(to right, rgba(124,165,184,0.2), rgba(228, 87, 46,0.25)), url('../../images/birds.jpg');
+    background-position-x: -50px;
+    background-position-y: 0px;
+    background: url('../../images/birds.jpg');
     .container {
       height: 100%;
       display: flex;
