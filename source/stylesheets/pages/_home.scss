@@ -1,4 +1,4 @@
-#home {
+.home {
   background: linear-gradient(to right, rgba(124,165,184,0.2), rgba(228, 87, 46,0.25)), url('../../images/birds.jpg');
   background-size: cover;
   height: 100vh;
@@ -10,7 +10,7 @@
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    #wrap {
+    .wrap {
       display: flex;
       justify-content: space-around;
       flex-direction: column;
@@ -25,17 +25,17 @@
         margin: 0px;
       }
       h1 {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 400;
         margin-bottom: 3px;
       }
       h2 {
-        font-size: 30px;
+        font-size: 38px;
         font-weight: 200;
         margin-bottom: 12px;
       }
       p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         margin: 0px;
         margin-bottom: 5px;
@@ -109,8 +109,20 @@
 }
 
 
+@media (max-width: 1000px) {
+  .home .container .wrap h1 {
+    font-size: 25px;
+  }
+  .home .container .wrap h2 {
+    font-size: 30px;
+  }
+  .home .container .wrap p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 470px) {
-  #home {
+  .home {
     background: url('../../images/birds.jpg');
     .container {
       height: 100%;
@@ -120,17 +132,17 @@
     }
   }
 
-  #wrap {
+  .wrap {
     text-align: center;
     position: static !important;
   }
-  h1 {
-    font-size: 14px !important;
+  .home .container .wrap h1 {
+    font-size: 14px;
   }
-  h2 {
-    font-size: 16px !important;
+  .home .container .wrap h2 {
+    font-size: 16px;
   }
-  p {
-    font-size: 12px !important;
+  .home .container .wrap p {
+    font-size: 12px;
   }
 }
