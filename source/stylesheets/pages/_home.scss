@@ -25,17 +25,17 @@
         margin: 0px;
       }
       h1 {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 400;
         margin-bottom: 3px;
       }
       h2 {
-        font-size: 38px;
+        font-size: 50px;
         font-weight: 200;
         margin-bottom: 12px;
       }
       p {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 400;
         margin: 0px;
         margin-bottom: 5px;
@@ -109,7 +109,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .home .container .wrap h1 {
     font-size: 25px;
   }
